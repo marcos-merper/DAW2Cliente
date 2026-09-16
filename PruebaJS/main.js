@@ -1,1 +1,1 @@
-console.log("miau gas");
+console.log("ayy");
