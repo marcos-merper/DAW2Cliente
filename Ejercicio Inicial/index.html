@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Formulario Centro Educativo</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">CENTRO DE ESTUDIOS</h1>
+            <h2 id="subtitle">VALLADOLID</h2>
+        </header>
+        <fieldset>
+            <legend>DATOS PARA LA MATRÍCULA</legend>
+
+            <form target="_blank" method="post" enctype="multipart/form-data" action="https://theuselessweb.com/">
+
+                <section>
+                    <label for="nombre">Nombre*: </label>
+                    <input type="text" id="nombre">
+                </section>
+
+                <section>
+                    <label for="apellidos">Apellidos*: </label>
+                    <input type="text" id="apellidos">
+                </section>
+
+                <section>
+                    <label for="direccion">Dirección: </label>
+                    <input type="text" placeholder="Calle, número, piso, letra" id="direccion">
+                </section>
+
+                <section>
+                    <label>Sexo: </label>
+
+                    <input type="radio" id="mujer" name="sexo">
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" id="hombre" name="sexo">
+                    <label for="hombre">Hombre</label>
+                </section>
+
+                <section>
+                    <label for="foto">Fotografía: </label>
+                    <input type="file" id="foto">
+                </section>
+
+                <section>
+                    <label>Modalidad: </label>
+                        
+                    <section>
+                        <input type="radio" name="modalidad" id="distancia">
+                        <label for="distancia" id="distanciaL">Distancia</label>
+                    </section>
+                    <section id="check2">
+                        <input type="checkbox" name="marcas" id="marcas">
+                        <label for="marcas" id="marcasL">Lenguajes de marcas</label>
+                    </section>
+                    <section id="check3">
+                        <input type="checkbox" name="prog" id="prog">
+                        <label for="prog" id="progL">Programación</label>
+                    </section>
+                    <section id="check1">
+                        <input type="checkbox" name="bd" id="bd">
+                        <label for="bd" id="bdL">Bases de Datos</label>
+                    </section>
+                    <section>
+                        <input type="radio" name="modalidad" id="presencial" checked>
+                        <label for="presencial" id="presencialL">Presencial</label>
+                    </section>
+                </section>
+
+                <section>
+                    <label for="cv">Curriculum vitae: </label>
+                    <input type="file" id="cv">
+                </section>
+
+                <section>
+                    <label for="idioma">Idioma: </label>
+                    <select name="idioma" id="idioma">
+                        <option value="ingles">Inglés</option>
+                        <option value="japones">Japonés</option>
+                        <option value="aleman">Alemán</option>
+                    </select>
+                </section>
+
+                <section>
+                    <label for="desc">Breve descripción personal: </label>
+                    <section><textarea name="desc" id="desc" placeholder="utilice este cuadro para escribir"></textarea></section>
+                </p>
+
+                <section>
+                    <label for="fecha">Fecha: </label>
+                    <input type="date" name="fecha" id="fecha" value="2022-01-31">
+                </section>
+
+                <section>
+                    <label for="name">Elija una hora: </label>
+                    <input type="time" name="hora" id="hora" value="15:30">
+                </section>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </fieldset>
+    </body>
+</html>

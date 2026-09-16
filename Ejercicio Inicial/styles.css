@@ -1,0 +1,52 @@
+html{
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    background-color: darkseagreen;
+}
+
+header{
+    align-content: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+input[type=text]{
+    background-color: aqua;
+}
+
+label:not(#mujerL):not(#hombreL):not(#distanciaL):not(#marcasL):not(#progL):not(#bdL):not(#presencialL) {
+    color: red;
+    font-style: italic;
+}
+
+h1{
+    color: darkorchid;
+}
+
+h2{
+    color: brown;
+}
+
+input[type=checkbox]{
+    padding-left: 22 px;
+}
+
+section{
+    padding: 10px;
+}
+
+#check1{
+    padding: 2px;
+}
+
+#check2{
+    padding: 2px;
+}
+
+#check3{
+    padding: 2%;
+}
