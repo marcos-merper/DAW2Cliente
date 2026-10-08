@@ -24,11 +24,11 @@ function processCSV(csv){
             subArray[2] = elements[i];
         }
         //Cod. postal
-        if(elements[i].match(/^[A-Z].*[a-z]$/g)){
+        if(elements[i].match(/^[0-9]{5}/g)){
             subArray[3] = elements[i];
         }
         //Matricula
-        if(elements[i].match(/^[A-Z].*[a-z]$/g)){
+        if(elements[i].match(/[0-9]{4}[A-Z]{3}/g)){
             subArray[4] = elements[i];
         }
     }
