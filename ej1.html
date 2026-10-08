@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let filas = prompt("Cuantas filas debe tener la tabla");
+    let columnas = prompt("Cuantas columnas debe tener la tabla");
+    document.write("<table border='1'>");
+    for (let i = 0; i < filas; i++) {
+        document.write("<tr>");
+        for (let j = 0; j < columnas; j++) {
+            document.write("<td>" + i + "," + j + "</td>");
+        }
+        document.write("</tr>");
+    }
+    document.write("</table>");
+</script>
+</html>
