@@ -31,5 +31,6 @@ function processCSV(csv){
         if(elements[i].match(/[0-9]{4}[A-Z]{3}/g)){
             subArray[4] = elements[i];
         }
+        result.push(subArray);
     }
 }
