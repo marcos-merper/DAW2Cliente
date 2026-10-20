@@ -1,13 +1,7 @@
-// ===== Funciones de repetición que iteran en arrays =====
-// Reciben una función como parámetro (típicamente una función flecha)
-// y se pueden encadenar (Fluent API / Chaining).
-
+//Funciones de repetición que iteran en arrays
 // --- forEach(): itera por cada elemento (no devuelve nada) ---
 let letras = ['a', 'b', 'c'];
-letras.forEach(function (e) {
-  console.log(e); // a, b, c
-});
-letras.forEach(e => console.log(e.toUpperCase())); // A, B, C (versión flecha)
+letras.forEach(e => console.log(e));
 
 // --- map(): devuelve un NUEVO array con cada elemento transformado ---
 let nums = [1, 2, 3];
@@ -15,7 +9,6 @@ console.log(nums.map(e => e + 1)); // [2, 3, 4]
 console.log(nums.map(e => e * 10)); // [10, 20, 30]
 
 // --- reduce(): reduce el array a UN solo valor (de izquierda a derecha) ---
-// (acumulador, elemento) => nuevoAcumulador; 0 es el valor inicial
 console.log(nums.reduce((acc, e) => acc + e, 0)); // 6 (suma)
 console.log(['a', 'b', 'c'].reduce((acc, e) => acc + e, '')); // "abc"
 
